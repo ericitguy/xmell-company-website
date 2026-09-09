@@ -1,0 +1,10 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+
+# Local server logs
+*.log
+
+# Freebuff workspace metadata
+.freebuff/
