@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Regenerate project pages
+        run: node scripts/generate-projects.js
+
+      - name: Verify generated pages are in sync
+        run: |
+          if [ -n "$(git status --porcelain projects/)" ]; then
+            echo "::error::Generated project pages are out of date."
+            echo "Run 'node scripts/generate-projects.js' locally and commit the results."
+            git status --porcelain projects/
+            exit 1
+          else
+            echo "Generated pages are up to date."
+          fi
+
+      - name: WCAG AA contrast audit
+        run: node scripts/audit-contrast.js

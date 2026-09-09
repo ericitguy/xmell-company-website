@@ -108,3 +108,15 @@ for (const r of results) {
 }
 console.log('='.repeat(70));
 console.log(`${results.length} pairs checked, ${results.filter(r => !r.normal).length} below 4.5:1 (${fails} strict fails)\n`);
+
+// Non-zero exit in CI when any pair fails AA
+if (fails > 0) {
+  console.error(`CONTRAST AUDIT FAILED: ${fails} pair(s) below 4.5:1`);
+  process.exitCode = 1;
+}
+
+// Non-zero exit in CI when any pair fails AA
+if (fails > 0) {
+  console.error(`CONTRAST AUDIT FAILED: ${fails} pair(s) below 4.5:1`);
+  process.exitCode = 1;
+}
