@@ -1393,6 +1393,29 @@ section { padding: clamp(4.5rem, 9vw, 8.5rem) 0; }
 }
 .footer-brand .brand { margin-bottom: 1.2rem; }
 .footer-brand p { font-size: 0.92rem; color: var(--mist); max-width: 30ch; }
+.footer-social {
+  display: flex;
+  gap: 0.7rem;
+  margin-top: 1.4rem;
+}
+.footer-social a {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background: var(--graphite);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--cloud);
+  transition: background 0.25s var(--ease), color 0.25s var(--ease), border-color 0.25s var(--ease), transform 0.25s var(--ease);
+}
+.footer-social a:hover {
+  background: var(--amber);
+  border-color: var(--amber);
+  color: var(--charcoal);
+  transform: translateY(-2px);
+}
+.footer-social svg { width: 18px; height: 18px; }
 .footer-col h4 {
   color: var(--white);
   font-size: 0.66rem;
