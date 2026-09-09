@@ -297,7 +297,7 @@ section { padding: clamp(4.5rem, 9vw, 8.5rem) 0; }
 .nav a:hover, .nav a.active { color: var(--white); }
 .nav a:hover::after, .nav a.active::after { width: 100%; }
 
-.header-cta { display: inline-flex; padding: 0.72rem 1.3rem; font-size: 0.72rem; }
+
 
 /* Hamburger */
 .nav-toggle {
@@ -348,7 +348,6 @@ section { padding: clamp(4.5rem, 9vw, 8.5rem) 0; }
   .nav a::after { display: none; }
   .nav .nav-cta { margin-top: 2rem; }
   .nav-toggle { display: flex; }
-  .header-cta.desktop { display: none; }
 }
 
 /* ---- Hero ---- */
