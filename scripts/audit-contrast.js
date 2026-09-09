@@ -34,9 +34,11 @@ const C = {
   cloud: hexToRgb('#c6ccd4'),
   paper: hexToRgb('#f6f7f8'),
   white: hexToRgb('#ffffff'),
-  amber: hexToRgb('#f5a800'),
-  amberDeep: hexToRgb('#d99400'),
-  amberInk: hexToRgb('#8a6400'),
+  amber: hexToRgb('#e02b20'),
+  amberDeep: hexToRgb('#b32219'),
+  amberInk: hexToRgb('#b32219'),
+  amberStrong: hexToRgb('#c9241b'),
+  amberBright: hexToRgb('#ff463b'),
   errorRed: hexToRgb('#ff6b5e')
 };
 
@@ -51,11 +53,14 @@ function check(name, fg, bg, sizes) {
 check('white on charcoal (headings/body)', C.white, C.charcoal);
 check('cloud on charcoal (lead text)', C.cloud, C.charcoal);
 check('mist on charcoal (secondary)', C.mist, C.charcoal);
-check('amber on charcoal (eyebrows)', C.amber, C.charcoal);
-check('amber on graphite (legend)', C.amber, C.graphite);
+check('white on accent (btn/CTA band/stats)', C.white, C.amber);
+check('white on accent-strong (btn hover)', C.white, C.amberStrong);
+check('accent-bright on charcoal (eyebrows)', C.amberBright, C.charcoal);
+check('accent-bright on graphite (legend/status)', C.amberBright, C.graphite);
 
 // Buttons
-check('charcoal on amber (primary btn)', C.charcoal, C.amber);
+check('white btn-dark on accent band', C.white, C.charcoal);
+check('band white heading on accent', C.white, C.amber);
 check('white on charcoal (btn-dark)', C.white, C.charcoal);
 check('white on charcoal btn ghost border-only', C.white, C.charcoal);
 
@@ -70,21 +75,19 @@ check('charcoal on paper', C.charcoal, C.paper);
 check('charcoal on white', C.charcoal, C.white);
 check('steel on white (muted body)', C.steel, C.white);
 check('steel on paper', C.steel, C.paper);
-check('amber-deep on white (value h3 hover)', C.amberInk, C.white);
-check('amber-deep on paper', C.amberInk, C.paper);
-check('amber-ink on white (light eyebrows)', C.amberInk, C.white);
-check('amber-ink on paper', C.amberInk, C.paper);
+check('accent-ink on white (light eyebrows)', C.amberInk, C.white);
+check('accent-ink on paper', C.amberInk, C.paper);
 
 // Form
 check('error red on graphite (field-error)', C.errorRed, C.graphite);
 check('error red on charcoal (error-summary)', C.errorRed, C.charcoal);
-check('amber form-status on graphite', C.amber, C.graphite);
+check('accent-bright form-status on graphite', C.amberBright, C.graphite);
 check('mist label on graphite (field labels)', C.mist, C.graphite);
 check('white input text on charcoal field', C.white, C.charcoal);
 
 // Stats strip (amber bg)
-check('charcoal on amber (stat numbers)', C.charcoal, C.amber);
-check('charcoal 72% on amber (stat labels)', composite([0x0e / 255, 0x11 / 255, 0x16 / 255, 0.72], C.amber), C.amber);
+check('white on accent (stat numbers)', C.white, C.amber);
+check('white on accent (stat labels)', C.white, C.amber);
 
 // Mining overlay text (cloud on near-black overlay ~ #0a0c0f composite over image: worst-case light spot)
 check('cloud on mining overlay (worst-case #1a1d22)', C.cloud, hexToRgb('#1a1d22'));

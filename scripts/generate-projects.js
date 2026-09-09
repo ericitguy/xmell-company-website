@@ -273,7 +273,7 @@ function page(p) {
           <span class="eyebrow">Scope of Work</span>
           <h2 class="h2" style="margin-top:0.9rem">What We Delivered</h2>
           <ul class="safety-points" style="margin-top:1.6rem">
-            ${p.scope.map((s) => `<li style="color:var(--steel)"><span class="tick" style="border-color:var(--charcoal);background:var(--charcoal);color:var(--amber)">${check}</span>${s}</li>`).join("\n            ")}
+            ${p.scope.map((s) => `<li style="color:var(--steel)"><span class="tick" style="border-color:var(--charcoal);background:var(--charcoal);color:var(--accent)">${check}</span>${s}</li>`).join("\n            ")}
           </ul>
 
           <h2 class="h2" style="margin-top:3.5rem">Project Gallery</h2>
