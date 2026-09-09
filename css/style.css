@@ -1196,6 +1196,51 @@ section { padding: clamp(4.5rem, 9vw, 8.5rem) 0; }
 .value-row:hover h3 { color: var(--accent-ink); }
 .value-row p { color: var(--steel); font-size: 1rem; max-width: 46ch; }
 
+/* ---- Facebook feed ---- */
+.fb-feed { background: var(--paper); }
+.fb-frame {
+  display: grid;
+  grid-template-columns: minmax(0, 500px) 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+.fb-plugin-wrap {
+  background: var(--white);
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  padding: 0.6rem;
+}
+.fb-plugin-wrap iframe {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 2px;
+}
+.fb-aside {
+  display: grid;
+  gap: 1.4rem;
+  align-content: start;
+  padding-top: 0.4rem;
+}
+.fb-note .k {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  margin-bottom: 0.5rem;
+}
+.fb-note .v {
+  color: var(--steel);
+  line-height: 1.65;
+  max-width: 34rem;
+}
+@media (max-width: 900px) {
+  .fb-frame { grid-template-columns: 1fr; }
+  .fb-plugin-wrap { justify-self: center; width: 100%; max-width: 500px; }
+}
+
 /* ---- Clients ---- */
 .clients { background: var(--paper); }
 .client-logos {
