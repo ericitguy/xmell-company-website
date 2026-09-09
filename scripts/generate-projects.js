@@ -203,7 +203,8 @@ function page(p) {
   <meta property="og:description" content="${p.description}">
   <meta property="og:url" content="https://xmellcompany.com/projects/${p.slug}.html">
   <meta property="og:image" content="https://images.unsplash.com/${p.img}?auto=format&fit=crop&w=1200&q=80">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230e1116'/%3E%3Ctext x='32' y='42' font-family='Arial Black, sans-serif' font-size='26' font-weight='900' fill='%23f5a800' text-anchor='middle'%3EXM%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" sizes="64x64" href="../assets/images/favicon-64.png">
+  <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -226,8 +227,8 @@ function page(p) {
   <header class="site-header scrolled" id="siteHeader">
     <div class="container header-inner">
       <a href="../index.html" class="brand" aria-label="X-Mell Company Ltd — Home">
-        <span class="brand-mark">XM</span>
-        <span>X-MELL<small>Company Ltd · Obuasi</small></span>
+        <span class="brand-logo"><img src="../assets/images/xmell-logo.jpg" alt="X-Mell Company Ltd logo" width="64" height="41"></span>
+        <span class="brand-text">X-MELL<small>Company Ltd · Obuasi</small></span>
       </a>
       <nav class="nav" id="primaryNav" aria-label="Primary">
         <a href="../index.html">Home</a>
@@ -331,7 +332,7 @@ function page(p) {
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="../index.html" class="brand"><span class="brand-mark">XM</span><span>X-MELL<small>Company Ltd · Obuasi</small></span></a>
+          <a href="../index.html" class="brand"><span class="brand-logo"><img src="../assets/images/xmell-logo.jpg" alt="X-Mell Company Ltd logo" width="64" height="41" loading="lazy"></span><span class="brand-text">X-MELL<small>Company Ltd · Obuasi</small></span></a>
           <p>Engineering. Construction. Project Management.</p>
         </div>
         <div class="footer-col">
