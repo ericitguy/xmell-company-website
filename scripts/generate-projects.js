@@ -120,9 +120,9 @@ const PROJECTS = [
     location: "AngloGold Ashanti Mine Hospital, Obuasi, Ghana",
     client: "AGA Health Foundation",
     type: "Renovation — Healthcare Facility",
-    img: "photo-1586773860418-d37222d8fce3",
+    img: "local:aga-health-1.jpg",
     imgAlt: "Renovation works at the AngloGold Ashanti Mine Hospital for the AGA Health Foundation",
-    gallery: ["photo-1586773860418-d37222d8fce3", "photo-1581091226825-a6a2a5aee158", "photo-1512917774080-9991f1c4c750"],
+    gallery: ["local:aga-health-1.jpg", "local:aga-health-2.jpg", "local:aga-health-3.jpg", "local:aga-health-4.jpg"],
     scope: [
       "Renovation works within the operational AngloGold Ashanti Mine Hospital environment.",
       "Upgrades delivered under strict safety and infection-control site protocols.",
@@ -172,6 +172,90 @@ const PROJECTS = [
       "Multi-storey structural delivery outside our home region — nationwide capability."
     ],
     services: ["Commercial Construction", "Civil Engineering", "Project Management"]
+  },
+  {
+    slug: "tripump-office-complex",
+    name: "TRI-PUMP Ghana Ltd — Office Complex",
+    title: "Construction of an Office Complex for TRI-PUMP Ghana Ltd — Obuasi | X-Mell Company Ltd",
+    description: "X-Mell Company Ltd constructed an office complex for TRI-PUMP Ghana Ltd in Obuasi — reinforced concrete frame and full building construction in Ashanti, Ghana.",
+    category: "Commercial",
+    keywords: "office complex construction Ghana, commercial construction Obuasi, TRI-PUMP Ghana, building contractor Obuasi, X-Mell Company",
+    location: "Obuasi, Ashanti Region, Ghana",
+    client: "TRI-PUMP Ghana Ltd",
+    type: "Commercial Construction — Office Building",
+    img: "local:tripump-office-1.jpg",
+    imgAlt: "Suspended slab pour in progress on the TRI-PUMP Ghana office complex in Obuasi",
+    gallery: ["local:tripump-office-2.jpg", "local:tripump-office-3.jpg", "local:tripump-office-4.jpg", "local:tripump-office-5.jpg", "local:tripump-office-6.jpg", "local:tripump-office-8.jpg", "local:tripump-office-9.jpg", "local:tripump-office-10.jpg"],
+    scope: [
+      "Construction of a complete office complex for TRI-PUMP Ghana Ltd in Obuasi.",
+      "Reinforced concrete frame, suspended slabs and masonry envelope works.",
+      "Site logistics and materials handling managed on an active building site.",
+      "Delivered for a corporate client to commercial building standards."
+    ],
+    services: ["Commercial & Industrial Construction", "Civil Engineering", "Project Management"]
+  },
+  {
+    slug: "epiroc-steel-structure",
+    name: "Epiroc Ghana Ltd — Steel Structure Erection",
+    title: "Erection of Steel Structure for Epiroc Ghana Ltd | X-Mell Company Ltd",
+    description: "X-Mell Company Ltd erected the steel structure for Epiroc Ghana Ltd — industrial steel erection and installation works in Ghana.",
+    category: "Industrial",
+    keywords: "steel structure erection Ghana, industrial construction Ghana, Epiroc Ghana, mining services contractor, X-Mell Company",
+    location: "Ghana",
+    client: "Epiroc Ghana Ltd",
+    type: "Industrial Construction — Structural Steel Erection",
+    img: "local:epiroc-steel-1.jpg",
+    imgAlt: "Steel structure erection works for Epiroc Ghana Ltd",
+    gallery: ["local:epiroc-steel-2.jpg", "local:epiroc-steel-3.jpg", "local:epiroc-steel-4.jpg"],
+    scope: [
+      "Erection of a structural steel structure for Epiroc Ghana Ltd.",
+      "Steel assembly, alignment and installation works to engineering specifications.",
+      "Lifting operations and working-at-height controls under a safety-managed site.",
+      "Industrial delivery for an international mining-equipment manufacturer."
+    ],
+    services: ["Industrial Construction", "Welding & Fabrication", "Mining & Industrial Services"]
+  },
+  {
+    slug: "piggery-sansu-anglogold",
+    name: "Piggery Structure — Sansu, AngloGold Ashanti",
+    title: "Construction of Piggery Structure at Sansu for AngloGold Ashanti Mine | X-Mell Company Ltd",
+    description: "X-Mell Company Ltd constructed a piggery structure at Sansu for AngloGold Ashanti Mine — agricultural-industrial building construction in Obuasi, Ghana.",
+    category: "Industrial",
+    keywords: "piggery construction Ghana, agricultural building Obuasi, AngloGold Ashanti contractor, industrial construction Ghana, X-Mell Company",
+    location: "Sansu, Obuasi, Ashanti Region, Ghana",
+    client: "AngloGold Ashanti Mine",
+    type: "Industrial Construction — Agricultural Structure",
+    img: "local:piggery-sansu-2.jpg",
+    imgAlt: "Piggery structure construction at Sansu for AngloGold Ashanti Mine",
+    gallery: ["local:piggery-sansu-3.jpg", "local:piggery-sansu-4.jpg", "local:piggery-sansu-5.jpg", "local:tripump-office-7.jpg"],
+    scope: [
+      "Construction of a piggery structure at Sansu for AngloGold Ashanti Mine.",
+      "Structural works and building envelope suited to agricultural-industrial use.",
+      "Delivered within the AngloGold Ashanti concession environment.",
+      "Works executed to mine-site safety and supervision standards."
+    ],
+    services: ["Industrial Construction", "Civil Engineering", "Mining & Industrial Services"]
+  },
+  {
+    slug: "kajeji-private-property",
+    name: "Private Residence — Kajeji",
+    title: "Construction of a Private Property at Kajeji | X-Mell Company Ltd",
+    description: "X-Mell Company Ltd constructed a private property at Kajeji for Mr. Emmanuel Ankamah, former AngloGold Ashanti Finance Officer — residential construction in Ghana.",
+    category: "Residential",
+    keywords: "private residence construction Ghana, residential construction Obuasi, house construction Ghana, X-Mell Company",
+    location: "Kajeji, Ghana",
+    client: "Mr. Emmanuel Ankamah — Former AngloGold Ashanti Finance Officer",
+    type: "Residential Construction — Private Residence",
+    img: "local:kajeji-property-1.jpg",
+    imgAlt: "Private residence under construction at Kajeji for Mr. Emmanuel Ankamah",
+    gallery: ["local:kajeji-property-2.jpg", "local:kajeji-property-3.jpg", "local:kajeji-property-4.jpg"],
+    scope: [
+      "Construction of a private residential property at Kajeji.",
+      "Full building delivery — substructure, superstructure and finishes.",
+      "Client-directed design decisions coordinated throughout the build.",
+      "Delivered for a private client with AngloGold Ashanti executive background."
+    ],
+    services: ["Residential Construction", "Turnkey Construction", "Project Management"]
   }
 ];
 
@@ -182,8 +266,21 @@ if (!fs.existsSync(OUT)) fs.mkdirSync(OUT, { recursive: true });
 const check = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>`;
 const arrow = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`;
 
+/* Image ids starting with "local:" resolve to files in assets/images/projects/;
+   anything else is treated as an Unsplash photo id (legacy). */
+const isLocal = (id) => id.startsWith("local:");
+const localFile = (id) => id.slice(6);
+const imgUrl = (id, w) =>
+  isLocal(id)
+    ? `../assets/images/projects/${localFile(id)}`
+    : `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
+const absImg = (id, w) =>
+  isLocal(id)
+    ? `https://xmellcompany.com/assets/images/projects/${localFile(id)}`
+    : `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80`;
+
 const img = (id, w, alt, eager) =>
-  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=80" alt="${alt}"${eager ? ' fetchpriority="high"' : ' loading="lazy"'}`;
+  `${imgUrl(id, w)}" alt="${alt}"${eager ? ' fetchpriority="high"' : ' loading="lazy"'}`;
 
 function page(p) {
   const related = PROJECTS.filter((x) => x.slug !== p.slug).slice(0, 3);
@@ -202,7 +299,7 @@ function page(p) {
   <meta property="og:title" content="${p.name} — X-Mell Project">
   <meta property="og:description" content="${p.description}">
   <meta property="og:url" content="https://xmellcompany.com/projects/${p.slug}.html">
-  <meta property="og:image" content="https://images.unsplash.com/${p.img}?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:image" content="${absImg(p.img, 1200)}">
   <link rel="icon" type="image/png" sizes="64x64" href="../assets/images/favicon-64.png">
   <link rel="apple-touch-icon" href="../assets/images/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -216,7 +313,7 @@ function page(p) {
     "name": "${p.name}",
     "description": "${p.description}",
     "url": "https://xmellcompany.com/projects/${p.slug}.html",
-    "image": "https://images.unsplash.com/${p.img}?auto=format&fit=crop&w=1200&q=80",
+    "image": "${absImg(p.img, 1200)}",
     "location": { "@type": "Place", "name": "${p.location}" },
     "parentOrganization": { "@type": "GeneralContractor", "name": "X-Mell Company Ltd." }
   }
